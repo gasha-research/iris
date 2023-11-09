@@ -1,7 +1,18 @@
-<title>Input From Test App</title>
-{% if outputname %}
-    <h1>入力された文字は「 {{ outputname }} 」です</h1>
-    <a href="./">トップへ戻る</a>
-{% else %}
-    <a href="./">トップへ戻る</a>
-{% endif %}
+<title>Iris Predict App</title>
+
+<style>
+#wrapper {
+    text-align: center;
+}
+</style>
+
+<div id="wrapper">
+
+  {% if irisName %}
+      <h1>それは {{ irisName }} です</h1>
+      <a href="./">トップへ戻る</a>
+  {% else %}
+      <a href="./">トップへ戻る</a>
+  {% endif %}
+
+</div>
